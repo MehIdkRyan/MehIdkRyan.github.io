@@ -1,50 +1,136 @@
-
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Official personal Webpage</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-        <style>
-            h1 {
-                background-color: #5865f2;
-                color: white;
-                font-family: "Roboto Mono", monospace;
-                text-align: center;
-                font-size: 3em;
-            }
-          body {
-                background-color: #121212;
-                color: white;
-                font-family: "Open Sans", sans-serif;
-                text-align: center;
-            }
-        button {
- 		 background-color: #347deb;
- 		 border: none;
- 		 color: white;
- 		 padding: 15px 32px;
- 		 text-align: center;
- 		 text-decoration: none;
-	   	 display: inline-block;
-		 font-size: 16px;
-	     }
-        </style>
-        <body>
-            <h1>Cheese</h1>
-	    <h2>5 Common Types of Cheese:</h2>
-            <ul>
-		    <li>Mozarella</li>
-		    <li>Parmesean</li>
-		    <li>Cheddar</li>
-		    <li>Gouda</li>
-		    <li>Swiss cheese</li>
-                <img src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/healthiest-cheese-1296x728-swiss.jpg" alt="nice pice">
-            </ul>
-        </body>
+        <title>Cheese</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    </head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #121212;
+        }
+        .container{
+            position: relative;
+            width: 1200px;
+            height: 300px;
+            margin: 240px auto;
+        }
+        .container .box{
+            position: relative;
+            width: calc(400px - 30px);
+            height: calc(300px - 30px);
+            background: #121212;
+            float: left;
+            margin: 15px;
+            box-sizing: border-box;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .container .box .icon{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #5865f2;
+            transition: 0.5s;
+            z-index: 1;
+        }
+        .container .box:hover .icon{
+            top: 20px;
+            left: calc(50% - 40px);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .container .box .icon .fa{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            transition: 0.5s;
+            color: #fff;
+        }
+        .container .box:hover .icon .fa{
+            font-size: 40px;
+        }
+        .container .box .content{
+            position: absolute;
+            top: 100%;
+            height: calc(100% - 100px);
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            opacity: 0;
+        }
+        .container .box:hover .content{
+            top : 100px;
+            opacity: 1;
+        }
+        .container .box .content h3{
+            margin: 0 0 10px;
+            padding: 0;
+            color: #fff;
+            font-size: 24px;
+        }
+        .container .box .content p{
+            margin: 0;
+            padding: 0;
+            color: #fff
+        }
+        h1{
+            background-color: #5865f2;
+            color: white;
+            font-family: "Roboto Mono", monospace;
+            text-align: center;
+            font-size: 3em;
+        }
+        h2{
+            color: white;
+            font-family: "Open Sans", sans-serif;
+            text-align: center;
+        }
+        h3{
+            color: white;
+            font-family: "Open Sans", sans-serif;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <h1>Cheese</h1>
+        <h2>There are many types of cheese</h2>
+        <h3>(Insert some essay about cheese that I didn't finish)</h3>
+        <div class="container">
+            <div class="box">
+                <div class="icon"><i class="fa fa-cutlery" aria-hidden="true"></i></div>
+                <div class="content">
+                    <h3>Cheese</h3>
+                    <p>There are many types of cheese out there. The 5 most common are the mozarella, parmesan, cheddar, gouda, and swiss cheese</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="content">
+                        <h3>Place with the Best Cheese</h3>
+                        <p>(Insert short paragraph about the place with the best cheese)</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+                        <div class="content">
+                            <h3>Local Cheese Near You</h3>
+                            <p>(Insert location aka hcmc and tell place with good cheese nearby)</p>
+                        </div>
+                    </div>
+        </div>
+
+    </body>
+</html>
