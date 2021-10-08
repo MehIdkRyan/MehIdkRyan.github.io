@@ -4,13 +4,15 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Official personal Webpage</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <title>About Cheese</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
         <style>
             h1 {
                 background-color: #5865f2;
@@ -20,25 +22,36 @@
                 font-size: 3em;
             }
           body {
-                background-color: #121212;
-                color: white;
-                font-family: "Open Sans", sans-serif;
-                text-align: center;
+              margin: 0;
+		padding: 0;
+                font-family: sans-serif;
             }
-        button {
- 		 background-color: #347deb;
- 		 border: none;
- 		 color: white;
- 		 padding: 15px 32px;
- 		 text-align: center;
- 		 text-decoration: none;
-	   	 display: inline-block;
-		 font-size: 16px;
-	     }
+    .container {
+	    position: relative;
+	    width: 1200px;
+	    height: 300px;
+	    margin: 240pc auto;
+  	}
+.container .box {
+	position: relative;
+	width: calc(400px - 30px);
+	height: calc(300px - 30px);
+	background: #000;
+	float: left;
+	margin: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;
+		}
         </style>
         <body>
-            <h1>Cheese</h1>
-		<button><h2>5 Common Types of Cheese:</h2></button>
+	<div class="container">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+		<h1>Cheese</h1>
+	    <h2>5 Common Types of Cheese:</h2>
             <ul>
 		    <li>Mozarella</li>
 		    <li>Parmesean</li>
