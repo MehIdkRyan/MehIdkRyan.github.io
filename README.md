@@ -1,2 +1,0 @@
-# MehIdkRyan.github.io
-Joe
